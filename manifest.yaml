@@ -1,0 +1,36 @@
+version: 0.0.1
+type: plugin
+author: zhanghong
+name: dify-doc-process-plugin
+label:
+  en_US: dify-doc-process-plugin
+  ja_JP: dify-doc-process-plugin
+  zh_Hans: dify-doc-process-plugin
+  pt_BR: dify-doc-process-plugin
+description:
+  en_US: Focus on file format conversion
+  ja_JP: Focus on file format conversion
+  zh_Hans: Focus on file format conversion
+  pt_BR: Focus on file format conversion
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/dify-doc-process-plugin.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 0.0.1
+created_at: 2026-03-10T11:44:33.8846812+08:00
+privacy: PRIVACY.md
+repo: https://github.com/sourcestart/dify-doc-process-plugin
+verified: false
