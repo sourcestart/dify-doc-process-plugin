@@ -2,15 +2,15 @@ identity:
   author: "zhanghong"
   name: "dify-doc-process-plugin"
   label:
-    en_US: "dify-doc-process-plugin"
-    zh_Hans: "dify-doc-process-plugin"
-    pt_BR: "dify-doc-process-plugin"
-    ja_JP: "dify-doc-process-plugin"
+    en_US: "Doc Process Plugin"
+    zh_Hans: "文档处理插件"
+    pt_BR: "Doc Process Plugin"
+    ja_JP: "Doc Process Plugin"
   description:
-    en_US: "Focus on file format conversion"
-    zh_Hans: "Focus on file format conversion"
-    pt_BR: "Focus on file format conversion"
-    ja_JP: "Focus on file format conversion"
+    en_US: "Convert legacy Word .doc files to .docx."
+    zh_Hans: "将旧版 Word .doc 文件转换为 .docx。"
+    pt_BR: "Convert legacy Word .doc files to .docx."
+    ja_JP: "Convert legacy Word .doc files to .docx."
   icon: "icon.svg"
 
 #########################################################################################
@@ -56,7 +56,7 @@ identity:
 #         en_US: "Access Token"
 
 tools:
-  - tools/dify-doc-process-plugin.yaml
+  - tools/doc_to_docx.yaml
 extra:
   python:
     source: provider/dify-doc-process-plugin.py

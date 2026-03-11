@@ -1,0 +1,26 @@
+identity:
+  name: "doc_to_docx"
+  author: "zhanghong"
+  label:
+    en_US: "DOC to DOCX"
+    zh_Hans: "DOC 转 DOCX"
+description:
+  human:
+    en_US: "Convert Microsoft Word .doc files to .docx format."
+    zh_Hans: "将 Microsoft Word 的 .doc 文件转换为 .docx 格式。"
+  llm: "Convert an uploaded .doc file into a .docx file and return the converted file."
+parameters:
+  - name: input_file
+    type: file
+    required: true
+    label:
+      en_US: DOC File
+      zh_Hans: DOC 文件
+    human_description:
+      en_US: "Upload a .doc file to convert."
+      zh_Hans: "上传一个 .doc 文件进行转换。"
+    llm_description: "The source .doc file to convert into .docx format."
+    form: form
+extra:
+  python:
+    source: tools/doc_to_docx.py
